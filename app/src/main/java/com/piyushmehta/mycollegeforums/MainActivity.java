@@ -6,18 +6,25 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends Activity {
 private WebView webView;
+    private static final String TAG = "MainActivity";
 
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         setContentView(R.layout.activity_main);
         webView=findViewById(R.id.web);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         WebSettings webSettings=webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-
         webView.loadUrl("https://mycollegeforums.com");
         webView.setWebViewClient(new WebViewClient());
 

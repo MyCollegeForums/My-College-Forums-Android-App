@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "706945545668",
+    "firebase_url": "https://mycollegeforums-4417b.firebaseio.com",
+    "project_id": "mycollegeforums-4417b",
+    "storage_bucket": "mycollegeforums-4417b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706945545668:android:eb7f9dd7b0bb2686",
+        "android_client_info": {
+          "package_name": "com.piyushmehta.mycollegeforums"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706945545668-heqchalemon563unroj2orvifhpdeps6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piyushmehta.mycollegeforums",
+            "certificate_hash": "1bc2cabdcfd080c72ba8ac545cb4f95b7666d383"
+          }
+        },
+        {
+          "client_id": "706945545668-ckasi8b2cjpdqvhkgf24cpo1fr78cvg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZrkD_e-WipPlWvqQpNbWqYvJW8zKTM70"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706945545668-ckasi8b2cjpdqvhkgf24cpo1fr78cvg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

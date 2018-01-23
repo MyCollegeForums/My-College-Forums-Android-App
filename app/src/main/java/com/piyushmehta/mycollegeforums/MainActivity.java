@@ -12,14 +12,17 @@ private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);
         webView=findViewById(R.id.web);
         WebSettings webSettings=webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
         webView.loadUrl("https://mycollegeforums.com");
         webView.setWebViewClient(new WebViewClient());
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -33,4 +36,6 @@ private WebView webView;
 
         }
     }
+
+
 }

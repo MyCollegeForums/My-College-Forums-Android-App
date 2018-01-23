@@ -20,4 +20,17 @@ private WebView webView;
         webView.setWebViewClient(new WebViewClient());
 
     }
+
+    @Override
+    public void onBackPressed() {
+        if(webView.canGoBack())
+        {
+            webView.goBack();
+        }
+        else
+        {
+            super.onBackPressed();
+
+        }
+    }
 }

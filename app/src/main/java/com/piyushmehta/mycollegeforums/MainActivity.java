@@ -14,5 +14,8 @@ private WebView webView;
         setContentView(R.layout.activity_main);
         webView=findViewById(R.id.web);
         WebSettings webSettings=webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.loadUrl("https://mycollegeforums.com");
+
     }
 }

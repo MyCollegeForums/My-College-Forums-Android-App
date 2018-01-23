@@ -25,6 +25,8 @@ private WebView webView;
         mAdView.loadAd(adRequest);
         WebSettings webSettings=webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.setOverScrollMode(WebView.OVER_SCROLL_NEVER);
         webView.loadUrl("https://mycollegeforums.com");
         webView.setWebViewClient(new WebViewClient());
 
